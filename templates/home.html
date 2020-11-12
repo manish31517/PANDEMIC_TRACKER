@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% load static %}
+{% block aboutcss %} /static/css/home.css {% endblock aboutcss %}
+{% block homeactive %}active{% endblock homeactive%}
+{% block title %} Home {% endblock title %}
+{% block body %}
+        <div class="landing">
+            <div class="landingText">
+                <h1>Stay In.<span style="color:#e0501b;font-size: 4vw"> Stay Safe.</span> </h1>
+                <h3>Lets all work together to put an end to this pandemic. <br> Help stop the spread.</h3>
+                         </div>
+            <div class="landingImage">
+                <img src="/static/img/bg.png" alt="">
+            </div>
+        </div>
+
+        <!-- ABOUT SECTION -->
+
+        <div class="about">
+            <div class="aboutText" >
+                <h1>Why is it important that <br> <span style="color:#2f8be0;font-size:3vw">You Stay Home?</span> </h1>
+                <img src="/static/img/doctor-woman-400px.png" alt="">
+            </div>
+            <div class="aboutList">
+                <ol>
+                    <li> 
+                        <span>01</span>
+                         <p>Covid-19, which is now a fast growing global pandemic. The number of confirmed cases worldwide has exceeded 25,65,000 due to rapid spreading of the virus.</p>
+                    </li>
+                    <li> 
+                        <span>02</span>
+                         <p>Covid-19, spreads very easily, much easier than many other regular illnesses we deal with on a regular basis. That's what makes it so dangerous.</p>
+                    </li>
+                    <li> 
+                        <span>03</span>
+                         <p>The best course of action is to stay at home prevent the spread of the disease as well as hospitals getting overwhelmed with patients who simply shoudn't be there.</p>
+                    </li>
+                    <li> 
+                        <span>04</span>
+                         <p>As of today, there is no know cure and no approved vaccine for Covid-19</p>
+                    </li>
+
+                </ol>
+            </div>
+        </div>
+
+        <!-- INFO SECTION -->
+
+        <div class="infoSection">
+            <div class="infoHeader" >
+                <h1>Things you could do during the <br> <span style="color:#e0501b">Coronavirus Quarantine.</span> </h1>
+            </div>
+            <div class="infoCards">
+                <div class="card one">
+                    <img src="/static/img/movie.png" class="cardoneImg" alt="" >
+                    <div class="cardbgone"></div>
+                    <div class="cardContent">
+                        <h2>Binge Watch</h2>
+                        <p>Binge-watch all your favorite TV Shows or Movies during this Quarantine!</p>
+                        <a href="#">
+                            <div class="cardBtn">
+                                <img src="/static/img/next.png" alt="" class="cardIcon">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card two">
+                    <img src="/static/img/learn.png" class="cardtwoImg" alt="" >
+                    <div class="cardbgtwo"></div>
+                    <div class="cardContent">
+                        <h2>Learn a New Skill</h2>
+                        <p>Try a new recipe, Write a blog or Learn a new language this Quarantine!</p>
+                        <a href="#">
+                            <div class="cardBtn">
+                                <img src="img/next.png" alt="" class="cardIcon">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card three">
+                    <img src="/static/img/videocall.png" class="cardthreeImg" alt="">
+                    <div class="cardbgone"></div>
+                    <div class="cardContent">
+                        <h2>Video Call</h2>
+                        <p>Have fun video calling your friends or family this Quarantine!</p>
+                        <a href="#">
+                            <div class="cardBtn">
+                                <img src="/static/img/next.png" alt="" class="cardIcon">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- BANNER AND FOOTER -->
+
+        <div class="banner">
+            <div class="bannerText">
+                <h1>Download the PANDEMIC-Tracker App Today. <br> <span style="font-size:1.6vw;font-weight:normal"  class="bannerInnerText">
+                    Stay Updated and get all your medical needs taken care of!
+                </span> </h1>
+                <a href="#"> <img src="/static/img/AndroidPNG.png" alt=""> </a>
+                <a href="#"> <img src="/static/img/iosPNG.png" alt=""> </a>
+            </div>
+            <div class="bannerImg">
+                <img src="/static/img/MobileApp.png" alt="">
+            </div>
+        </div>
+
+{% endblock body %}
