@@ -2,8 +2,61 @@
 {% block statesticactive %}active{% endblock statesticactive%}
 {%block title %} Statestic {% endblock title %}
 {% block body %}
-<h2>
-  statistic data
-</h2>
-
-    {% endblock body %}
+<h1></h1>
+<div class="container pt-5 my-5">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card bg-warning">
+        <div class="card-body">
+          <h5 class="card-title dropdown-toggle">Total</h5>
+          <p class="card-text" id="tt">1,500,420</p>
+         </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card bg-success">
+        <div class="card-body">
+          <h5 class="card-title dropdown-toggle">Recovered</h5>
+          <p class="card-text" id="recover">1,500,420</p>
+         </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card bg-primary">
+        <div class="card-body">
+          <h5 class="card-title dropdown-toggle">Active</h5>
+          <p class="card-text" id="active">1,500,420</p>
+         </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card bg-danger">
+        <div class="card-body">
+          <h5 class="card-title dropdown-toggle">Death</h5>
+          <p class="card-text" id="death">1,500,420</p>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container table-responsive mb-5 pb-5">
+  <table class="table table-striped " id="reports">
+    <thead>
+      <tr>
+        <th scope="col">State</th>
+        <th scope="col">Total Cases</th>
+        <th scope="col">Active Cases</th>
+        <th scope="col">Recovery Casees</th>
+        <th scope="col">Death Cases</th>
+        <th scope="col">Last Updated</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/static/js/statestic.js">
+</script>
+ {% endblock body %}
